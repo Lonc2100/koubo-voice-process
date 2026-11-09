@@ -1,0 +1,77 @@
+{
+  "schema_version": "2.0.0-qiaomu-lite",
+  "generated_at": "2026-11-09",
+  "package": {
+    "name": "koubo-voice-process",
+    "version": "0.1.0",
+    "owner": "Lonc2100",
+    "maturity_tier": "scaffold",
+    "lifecycle_stage": null,
+    "upstream_inspiration": null,
+    "upstream_sync": {}
+  },
+  "intent": {
+    "description": "人声处理与原始音轨整理。用户要求处理真人口播干声的闷感、浑浊、起伏和轻重不一时使用；保本人音色、音高、原话，不擅自换配音或加速。",
+    "job_to_be_done": "人声处理与原始音轨整理。用户要求处理真人口播干声的闷感、浑浊、起伏和轻重不一时使用；保本人音色、音高、原话，不擅自换配音或加速。",
+    "target_users": [
+      "Qiaomu operator"
+    ],
+    "inputs": [],
+    "outputs": [],
+    "exclusions": [],
+    "qiaomu_defaults": {}
+  },
+  "triggers": {
+    "should_trigger": [
+      "请用相机原始音轨整理人声音量，保留自然咬字，原声和候选同句同速同响度试听。",
+      "koubo-voice-process 人声自然度与响度"
+    ],
+    "should_not_trigger": [
+      "写一首诗"
+    ],
+    "near_neighbor": [
+      "只帮我改一个文件名"
+    ]
+  },
+  "workflow": {
+    "router_rules": [],
+    "compact_workflow": [],
+    "gate_ladder": [],
+    "output_contract": []
+  },
+  "resources": {
+    "references": [
+      "references\\production-methods.md",
+      "references\\standards.md"
+    ],
+    "scripts": [],
+    "evals": [
+      "evals\\trigger_cases.json"
+    ],
+    "reports": [
+      "reports\\skill-ir.json",
+      "reports\\trigger-eval.json"
+    ]
+  },
+  "portability": {
+    "canonical_format": null,
+    "adapter_targets": [
+      "openai",
+      "claude",
+      "generic",
+      "agent-skills-compatible"
+    ],
+    "activation": {},
+    "execution": {},
+    "trust": {},
+    "permissions": {},
+    "degradation": {}
+  },
+  "gates": {},
+  "evidence_boundary": {
+    "generated_reports_are_evidence": true,
+    "planned_work_is_evidence": false,
+    "missing_external_or_human_evidence_label": "missing evidence",
+    "public_claim_policy": "claim only what local validation, install proof, human review, or provider-backed evidence actually supports"
+  }
+}

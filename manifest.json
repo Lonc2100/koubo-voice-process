@@ -1,0 +1,15 @@
+{
+  "name": "koubo-voice-process",
+  "version": "0.1.0",
+  "owner": "Lonc2100",
+  "updated_at": "2026-11-09",
+  "status": "public-preview",
+  "maturity_tier": "scaffold",
+  "release_gates": [
+    "package-validation",
+    "secret-scan",
+    "PR-merge",
+    "versioned-release",
+    "clean-install"
+  ]
+}
