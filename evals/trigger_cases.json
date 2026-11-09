@@ -1,0 +1,1 @@
+{"positive_concepts": {"task": ["人声", "原始音轨", "koubo-voice-process"]}, "description_required_concepts": [], "recommended_threshold": 0.1, "negative_patterns": ["写一首诗"], "should_trigger": [{"text": "请用相机原始音轨整理人声音量，保留自然咬字，原声和候选同句同速同响度试听。"}, {"text": "koubo-voice-process 人声自然度与响度"}], "should_not_trigger": [{"text": "写一首诗"}], "near_neighbor": [{"text": "只帮我改一个文件名"}]}

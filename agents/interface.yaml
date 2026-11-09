@@ -1,0 +1,7 @@
+interface:
+  display_name: "koubo-voice-process"
+  short_description: "真人口播专项制作判断与验收"
+  default_prompt: "使用$koubo-voice-process，按我提供的真实素材执行并检查对应产物。"
+compatibility:
+  adapter_targets: [openai, claude, generic, agent-skills-compatible]
+  verification_status: "format only; media tools required"
